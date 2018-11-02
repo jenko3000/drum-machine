@@ -1,0 +1,58 @@
+.controls {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+button.trigger {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  border-radius: 2px;
+  outline: none;
+  border: 2px solid #ccc;
+}
+button.trigger:nth-child(4n + 1) {
+  margin-left: 3px;
+}
+button.trigger:hover {
+  cursor: pointer;
+  border-color: #777;
+}
+
+button.trigger.live {
+  border-color: yellow;
+}
+button.trigger.isOn {
+  background-color: darkblue;
+}
+.channel-outer {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  justify-content: centre;
+}
+.sound-selector {
+  width: 260px;
+  display: flex;
+}
+.sound-selector select:first-child {
+  flex-basis: 30%;
+}
+.sound-selector select:nth-child(2) {
+  flex-basis: 68%;
+}
+#tempo-control {
+  margin-top: 5px;
+  align-self: flex-start;
+}
+#tempo-control .numerical-input {
+  width: 40px;
+  margin: 0 5px;
+}
+#drum-machine {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
